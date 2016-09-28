@@ -16,6 +16,9 @@ type
     fInternal: TInternalConstr;
   end;
 
+const
+  CArrayOperators: array[0..4] of string = ('=', '+=', '-=', '*=', '/=');
+
 function CreateElement(fLevel: Integer; fConstr: TConstructionType;fAmount: Integer = 0): tRec;
 
 implementation
